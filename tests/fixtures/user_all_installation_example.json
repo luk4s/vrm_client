@@ -1,0 +1,92 @@
+{
+  "success": true,
+  "records": [
+    {
+      "idSite": 3,
+      "accessLevel": 0,
+      "owner": true,
+      "is_admin": true,
+      "name": "Test Installation",
+      "identifier": "test-inst-1",
+      "idUser": 0,
+      "pvMax": 0,
+      "timezone": "string",
+      "phonenumber": null,
+      "notes": null,
+      "geofence": null,
+      "geofenceEnabled": true,
+      "realtimeUpdates": true,
+      "hasMains": 0,
+      "hasGenerator": 0,
+      "noDataAlarmTimeout": null,
+      "alarmMonitoring": 0,
+      "invalidVRMAuthTokenUsedInLogRequest": 0,
+      "syscreated": 0,
+      "shared": true,
+      "device_icon": "string",
+      "alarm": true,
+      "last_timestamp": 0,
+      "current_time": "string",
+      "timezone_offset": 0,
+      "demo_mode": true,
+      "mqtt_webhost": "string",
+      "mqtt_host": "string",
+      "high_workload": true,
+      "current_alarms": [
+        "string"
+      ],
+      "num_alarms": 0,
+      "avatar_url": null,
+      "tags": [
+        {
+          "idTag": 0,
+          "name": "string",
+          "automatic": true
+        }
+      ],
+      "images": [
+        {
+          "idSiteImage": 0,
+          "imageName": "string",
+          "url": "string"
+        }
+      ],
+      "view_permissions": {
+        "update_settings": true,
+        "settings": true,
+        "diagnostics": true,
+        "share": true,
+        "vnc": true,
+        "mqtt_rpc": true,
+        "vebus": true,
+        "twoway": true,
+        "exact_location": true,
+        "nodered": true,
+        "nodered_dash": true,
+        "signalk": true
+      },
+      "extended": [
+        {
+          "idDataAttribute": 0,
+          "code": "string",
+          "description": "string",
+          "formatWithUnit": "string",
+          "dataType": "string",
+          "textValue": "string",
+          "instance": "string",
+          "timestamp": "string",
+          "dbusServiceType": "string",
+          "dbusPath": "string",
+          "rawValue": "string",
+          "formattedValue": "string",
+          "dataAttributeEnumValues": [
+            {
+              "nameEnum": "string",
+              "valueEnum": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

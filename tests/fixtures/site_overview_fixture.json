@@ -1,0 +1,82 @@
+{
+  "success": true,
+  "records": {
+    "bs": [
+      [
+        1743793892000,
+        37,
+        37,
+        37
+      ]
+    ],
+    "tsT": [
+      [
+        1743793892000,
+        25.092307692307692,
+        25,
+        26
+      ]
+    ],
+    "ac_loads": [
+      [
+        1743793892000,
+        11999.876923076923,
+        10770,
+        18407
+      ]
+    ],
+    "consumption": [
+      [
+        1743793892000,
+        11999.876923076923,
+        10770,
+        18407
+      ]
+    ],
+    "consumption_input": [
+      [
+        1743793892000,
+        11991.06923076923
+      ]
+    ],
+    "consumption_output": [
+      [
+        1743793892000,
+        8.807692307692307
+      ]
+    ],
+    "solar_yield": false,
+    "hub_inverter": false,
+    "from_to_grid": [
+      [
+        1743793892000,
+        12065.169230769232
+      ]
+    ],
+    "ac_in": false,
+    "ac_out": false,
+    "ac_genset": false,
+    "total_solar_yield": false,
+    "Pdc": false,
+    "dc": false,
+    "evp": false
+  },
+  "totals": {
+    "bs": 37,
+    "tsT": 25.092307692307692,
+    "ac_loads": 11999.876923076923,
+    "consumption": 11999.876923076923,
+    "consumption_input": 11991.06923076923,
+    "consumption_output": 8.807692307692307,
+    "solar_yield": 0,
+    "hub_inverter": 0,
+    "from_to_grid": 12065.169230769232,
+    "ac_in": 0,
+    "ac_out": 0,
+    "ac_genset": 0,
+    "total_solar_yield": 0,
+    "Pdc": false,
+    "dc": false,
+    "evp": false
+  }
+}

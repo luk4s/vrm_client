@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "id": 1,
+    "name": "Lukas",
+    "email": "admin@luk4s.cz",
+    "country": "string"
+  }
+}

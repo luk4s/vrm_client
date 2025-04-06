@@ -1,0 +1,14 @@
+/.idea
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+.env
+.venv
+env/
+venv/
+ENV/
+.DS_Store

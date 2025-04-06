@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "records": [
+    {
+      "id": "device-123",
+      "instance": 0,
+      "productName": "MultiPlus-II",
+      "productId": "abc123",
+      "firmwareVersion": "489",
+      "connected": true,
+      "lastSeen": 1647518450
+    },
+    {
+      "id": "device-456",
+      "instance": 0,
+      "productName": "SmartSolar MPPT 150/45",
+      "productId": "def456",
+      "firmwareVersion": "156",
+      "connected": true,
+      "lastSeen": 1647518450
+    },
+    {
+      "id": "device-789",
+      "instance": 0,
+      "productName": "Battery BYD Premium LVS",
+      "productId": "ghi789",
+      "firmwareVersion": "3.12",
+      "connected": true,
+      "lastSeen": 1647518450
+    },
+    {
+      "id": "device-012",
+      "instance": 0,
+      "productName": "GX Device",
+      "productId": "jkl012",
+      "firmwareVersion": "2.80",
+      "connected": true,
+      "lastSeen": 1647518450
+    }
+  ]
+}

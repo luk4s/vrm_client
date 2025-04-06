@@ -1,0 +1,7 @@
+.env
+.idea
+.gitignore
+.vscode
+__pycache__
+.vrm_token_cache
+.DS_Store
