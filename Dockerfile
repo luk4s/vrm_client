@@ -13,7 +13,7 @@ RUN apk add --no-cache --virtual .build-deps \
 WORKDIR /app
 
 RUN pip install --upgrade pip
-COPY requirements.txt setup.py README.md ./
+COPY requirements.txt setup.py README.md VERSION ./
 RUN pip install -e ".[dev]"
 RUN apk del .build-deps
 
