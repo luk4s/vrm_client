@@ -129,10 +129,10 @@ class TestInfluxDBService:
         """Test the _create_sum_of_data_points method properly aggregates field values."""
         # Create mock points with fields
         point1 = MagicMock()
-        point1._fields = {"consumption": 2.5, "solar": 3.2, "grid": 0.6}
+        point1._fields = {"consumption": 2.5, "solar": 3.2, "grid": 0.6, "battery_voltage": 51.3, "battery_soc": 85.0}
 
         point2 = MagicMock()
-        point2._fields = {"consumption": 1.5, "solar": None, "grid": -0.3}
+        point2._fields = {"consumption": 1.5, "solar": None, "grid": -0.3, "battery_voltage": 54.1, "battery_soc": 92.0}
 
         points = [point1, point2]
 
@@ -146,4 +146,7 @@ class TestInfluxDBService:
         assert result._fields["consumption"] == 4.0
         assert result._fields["solar"] == 3.2
         assert result._fields["grid"] == 0.3
+        # Assert the average fields are calculated correctly
+        assert result._fields["battery_voltage"] == (51.3 + 54.1) / 2
+        assert result._fields["battery_soc"] == (85.0 + 92.0) / 2
 

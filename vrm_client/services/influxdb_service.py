@@ -84,17 +84,29 @@ class InfluxDBService:
         """
 
         overview_point = Point("solar_system")
-        field_sums = {}
+        sum_fields = {"consumption": 0.0, "ac_load": 0.0, "grid": 0.0, "solar": 0.0}
+        avg_fields = {"battery_soc": [], "battery_voltage": []}
+
+        # Process all points
         for point in points:
             for field_key, field_value in point._fields.items():
+                if field_value is None:
+                    continue
 
-                if field_key in field_sums:
-                    field_sums[field_key] += field_value or 0.0
-                else:
-                    field_sums[field_key] = field_value or 0.0
+                if field_key in avg_fields:
+                    avg_fields[field_key].append(field_value)
+                if field_key in sum_fields:
+                    sum_fields[field_key] += field_value
 
-        for field_key, field_sum in field_sums.items():
+        # Add summed fields
+        for field_key, field_sum in sum_fields.items():
             overview_point.field(field_key, field_sum)
+
+        # Add averaged fields
+        for field_key, values in avg_fields.items():
+            if values:  # Only calculate average if we have values
+                avg_value = sum(values) / len(values)
+                overview_point.field(field_key, avg_value)
 
         return overview_point
 
