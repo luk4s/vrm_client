@@ -57,9 +57,10 @@ class SiteService:
 
 
     def _installation_data(self, installation: Installation) -> Dict[str, str]:
-        start_time = int((datetime.now() - timedelta(minutes=5)).timestamp())
+        start_time = int((datetime.now() - timedelta(minutes=1)).timestamp())
         params = {
             "start": start_time,
+            "internal": "15mins",
             "type": "custom",
             "attributeCodes[0]": "ac_loads",
             "attributeCodes[1]": "from_to_grid",
