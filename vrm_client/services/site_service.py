@@ -57,7 +57,7 @@ class SiteService:
 
 
     def _installation_data(self, installation: Installation) -> Dict[str, str]:
-        start_time = int((datetime.now() - timedelta(minutes=1)).timestamp())
+        start_time = int((datetime.now() - timedelta(minutes=5)).timestamp())
         params = {
             "start": start_time,
             "internal": "15mins",

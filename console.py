@@ -14,3 +14,6 @@ code.interact(
     banner="Python console with VRMApiClient pre-loaded as 'client'",
     local=namespace
 )
+api = VRMApiClient()
+site = SiteService(api)
+db = InfluxDBService(site)
