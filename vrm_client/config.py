@@ -23,7 +23,7 @@ INFLUXDB_ORG = os.getenv("INFLUXDB_ORG")
 INFLUXDB_BUCKET = os.getenv("INFLUXDB_BUCKET")
 
 # Default data collection interval in seconds
-DATA_COLLECTION_INTERVAL = int(os.getenv("DATA_COLLECTION_INTERVAL", 5))
+DATA_COLLECTION_INTERVAL = int(os.getenv("DATA_COLLECTION_INTERVAL", 10))
 
 # Logging configuration
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO").upper()
